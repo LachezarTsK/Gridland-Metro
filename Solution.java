@@ -26,7 +26,7 @@ public class Solution {
 		}
 		scanner.close();
 
-		sortTracksInsideRows_DecreasingOrderOfStartColumn();
+		sortTracksInsideRows_decreasingOrderOfStartColumn();
 		long totalCellsWithTracks__exludingOverlaps = getTotalCellsWithTracks_exludingOverlaps();
 
 		long spotsForLampPosts = (long) numberOfRows * numberOfColumns - (long) totalCellsWithTracks__exludingOverlaps;
@@ -50,10 +50,10 @@ public class Solution {
 	}
 
 	/**
-	 * Sorts each list of tracks within the respective row in decreasing order of
-	 * the start columns.
+	 * Sorts each list of tracks within each row in decreasing order of the start
+	 * columns.
 	 */
-	private static void sortTracksInsideRows_DecreasingOrderOfStartColumn() {
+	private static void sortTracksInsideRows_decreasingOrderOfStartColumn() {
 		for (int row : tracksPerRow.keySet()) {
 			Collections.sort(tracksPerRow.get(row));
 		}
