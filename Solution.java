@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 public class Solution {
 	/**
+	 * HashMap "tracksPerRow".
 	 * Keys: rows with tracks.
-	 * 
 	 * Values: tracks contained in the respective rows.
 	 */
 	private static Map<Integer, ArrayList<Track>> tracksPerRow = new HashMap<Integer, ArrayList<Track>>();
